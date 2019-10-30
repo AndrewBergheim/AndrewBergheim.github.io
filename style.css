@@ -58,8 +58,7 @@
     bottom: -50px;
     width: 960px;
     background-color:#ffffff;
-    border-color: #dddddd;
-    border: gray;
+    border: 1px solid #dddddd;
 }
 .body-content {
     font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
@@ -83,7 +82,7 @@
     margin: auto;
     width: 860px;
     height: 2px;
-    background-color: #dddddd;
+    background-color:#dddddd;
 }
 
 #me {
