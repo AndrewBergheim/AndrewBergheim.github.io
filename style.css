@@ -37,7 +37,14 @@
     border-right: thin;
     border-width: 2px;
 }
-
+.header-border {
+    margin: auto;
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+    height: 2px;
+    background-color:#cccccc;
+}
 .background {
     background-image: url(./images/white-waves.png);
     position: static;
@@ -67,9 +74,16 @@
 
 #about-me   {
     position: relative;
-    right: 200px;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#about-border{
+    margin: auto;
+    width: 860px;
+    height: 2px;
+    background-color: #dddddd;
 }
 
 #me {
