@@ -77,6 +77,10 @@
     
 }
 
+.form-text{
+    padding-left: 10px;
+}
+
 .body-content::after{
     content: "";
   clear: both;
@@ -225,3 +229,4 @@ textarea {
     color: #777777;
     font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif" ;
 }
+
