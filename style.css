@@ -30,12 +30,19 @@
     padding-bottom: -12px;
 } 
 
+.header-center {
+    float: right;
+    text-align: right;
+    padding: 12px;
+    border-left:1px solid;
+    border-right:1px solid;
+    border-color: #dddddd;
+}
+
 .header-right {
     float: right;
     text-align: right;
     padding: 12px;
-    border-right: thin;
-    border-width: 2px;
 }
 .header-border {
     margin: auto;
@@ -80,7 +87,8 @@
     position: relative;
     text-align: left;
     padding: 20px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #about-border{
