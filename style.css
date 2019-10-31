@@ -63,7 +63,8 @@
 .body-content {
     font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
     position: relative;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     padding-left: 0px;
     padding-right: 40px;
     
@@ -95,6 +96,9 @@
     width: 200px;
     height: 200px;
     padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+
 }
 
 
@@ -105,5 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    font-size: 16px;
     color: #777777;
 }
