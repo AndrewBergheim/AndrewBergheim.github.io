@@ -98,6 +98,24 @@
     background-color:#dddddd;
 }
 
+.portfolio-image {
+width: 400px;
+height: 225px;
+padding: 10px;
+}
+
+.portfolio-caption {
+position: relative;
+background-color: #4aaaa5;
+color: #ffffff;
+text-align: center;
+margin : auto;
+padding: 10px;
+width: 380px;
+display: inline-block;
+
+}
+
 #me {
     position: relative;
     float: left;
@@ -110,7 +128,7 @@
 }
 
 #portfolio-container{
-    height: 960px;
+    height: 612px;
 }
 
 #message-box{
@@ -127,6 +145,53 @@
     margin-bottom: 20px;
 }
 
+#top-left{
+    position: relative;
+    float: left;
+
+}
+
+#top-right{
+    position: relative;
+    float: right;
+    top: -38px;
+}
+
+#bottom-left{
+    position: relative;
+    float: left;
+
+}
+
+#bottom-right{
+    position: relative;
+    float: right;
+    bottom: 38px;
+}
+
+#top-left-caption{
+    position: relative;
+    right: 410PX;
+    top: 200px;
+}
+
+#top-right-caption{
+    position: relative;
+    left: 550px;
+    bottom: 48px;
+}
+
+#bottom-left-caption{
+    position: relative;
+    right: 410px;
+    top: 200px;
+}
+
+#bottom-right-caption{
+    position: relative;
+    left: 550px;
+    bottom: 48px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
