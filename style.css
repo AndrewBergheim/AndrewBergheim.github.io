@@ -172,25 +172,25 @@ display: inline-block;
 #top-left-caption{
     position: relative;
     right: 410PX;
-    top: 200px;
+    top: 192px;
 }
 
 #top-right-caption{
     position: relative;
     left: 550px;
-    bottom: 48px;
+    bottom: 53px;
 }
 
 #bottom-left-caption{
     position: relative;
     right: 410px;
-    top: 200px;
+    top: 192px;
 }
 
 #bottom-right-caption{
     position: relative;
     left: 550px;
-    bottom: 48px;
+    bottom: 53px;
 }
 
 h1, h2, h3, h4, h5, h6 {
