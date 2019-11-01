@@ -121,8 +121,10 @@ padding: 10px;
 
 }
 .footer-text {
+    position: relative;
+    top: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #dddddd;
     font-size: 16px;
 }
 
