@@ -1,234 +1,95 @@
 
 
-
-.header{
+a {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body {
     background-color: #ffffff;
-    border-color: #cccccc;
-    color: #4aaaa5;
-    margin: auto;
-    width: 960px;
-    height: 60px;
-    margin-bottom: 10px;
 }
 
-.footer{
-    background-color: #666666;
-    border-top: 8px solid #4aaaa5;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    
-}
-
-.header-left {
-    float: left;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px;
-    padding-bottom: -12px;
-} 
-
-.header-center {
-    float: right;
-    text-align: right;
-    padding: 12px;
-    border-left:1px solid;
-    border-right:1px solid;
-    border-color: #dddddd;
-}
-
-.header-right {
-    float: right;
-    text-align: right;
-    padding: 12px;
-}
-.header-border {
-    margin: auto;
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    height: 2px;
-    background-color:#cccccc;
-}
-.background {
-    background-image: url(./images/white-waves.png);
-    position: static;
-    width: 100%;
-    height: 1800px;
-}
-
-.body-container {
-    margin: auto;
-    position: relative;
-    bottom: -50px;
-    width: 960px;
-    background-color:#ffffff;
-    border: 1px solid #dddddd;
-}
-.body-content {
-    font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
-    position: relative;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 40px;
-    
-}
-
-.form-text{
-    padding-left: 10px;
-}
-
-.body-content::after{
-    content: "";
-  clear: both;
-  display: table;
-}
-
-.body-heading   {
-    position: relative;
-    text-align: left;
-    padding: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.body-border{
-    margin: auto;
-    width: 930px;
-    height: 2px;
-    background-color:#dddddd;
-}
-
-.portfolio-image {
-width: 400px;
-height: 225px;
-padding: 10px;
-}
-
-.portfolio-caption {
-    position: relative;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
-    margin : auto;
-    padding: 10px;
-    width: 380px;
-    display: inline-block;
-    font-size: 16px;
-
-}
-.footer-text {
-    position: relative;
-    top: 20px;
-    text-align: center;
-    color: #dddddd;
-    font-size: 16px;
-}
-
-#me {
-    position: relative;
-    float: left;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 0px;
-
-}
-
-#portfolio-container{
-    height: 612px;
-}
-
-#message-box{
-    height: 300px;
-}
-
-#submit {
-    width: 200px;
-    height: 45px;
-    background-color: #4aaaa5;
-    color: white;
-    font-size: 24px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-#top-left{
-    position: relative;
-    float: left;
-
-}
-
-#top-right{
-    position: relative;
-    float: right;
-    left: -100px;
-    top: -38px;
-}
-
-#bottom-left{
-    position: relative;
-    float: left;
-
-}
-
-#bottom-right{
-    position: relative;
-    float: right;
-    bottom: 38px;
-    left: -100px;
-}
-
-#top-left-caption{
-    position: relative;
-    right: 410PX;
-    top: 192px;
-}
-
-#top-right-caption{
-    position: relative;
-    left: 450px;
-    bottom: 53px;
-}
-
-#bottom-left-caption{
-    position: relative;
-    right: 410px;
-    top: 192px;
-}
-
-#bottom-right-caption{
-    position: relative;
-    left: 450px;
-    bottom: 53px;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
+    padding: 10px;
+    border-bottom: 2px solid #cccccc;
 }
 
 p {
     font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
-    font-size: 16px;
+    font-size: 16pt;
     color: #777777;
 }
 
-input {
-    width: 918px;
+label {
+    font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif";
+    font-size: 16pt;
+    color: #777777;
     margin: 10px;
-    margin-top: 0px;
-    color: #777777;
 }
 
-textarea {
-    width: 918px;
+main{
+    margin-bottom: 40px;
+}
+
+.footer{
+    width: 100%;
+    height: 40px;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    color: #dddddd;
+    display: block;
+}
+
+.navbar-brand {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif !important; 
+    flex-shrink: none;
+    padding: 10px;
+}
+
+.nav-link > li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+}
+
+.portfolio-description {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 465px;
+}
+
+
+.img-thumbnail {
+    width: 465px;
+    height: 262px;
+    margin-bottom: 10px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #4aaaa5;
+}
+
+.navbar-light .navbar-brand{
+    color:#ffffff
+}
+
+
+#me {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar-light{
+    border-bottom: 2px solid #cccccc;
+}
+
+.btn-primary{
     margin: 10px;
-    color: #777777;
-    font-family: "arial", "Helvetica Neue", "Helvetica", "sans-serif" ;
+    background-color: #4aaaa5;
+    color: #dddddd;
+    border-color: #666666;
 }
-

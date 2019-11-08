@@ -1,53 +1,85 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andrew Bergheim - Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+<!--Stylesheets + Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href = "./assets/css/style.css">
 </head>
-    
-    <body>
-        <!--Header-->
-        <section class = "header">
-            <a href = "./index.html"> <h2 class = "header-left">Andrew Bergheim</h2> </a>
-                <div class = "header-right"> </div>
-                    <a href = "./contact.html"> <h4 class = "header-right">Contact</h4> </a>
-                    <a href = "./portfolio.html"> <h4 class = "header-center">Portfolio</h4> </a>    
-                    <a href = "./index.html"> <h4 class = "header-right">About</h4> </a>          
-        </section>
-        <!--The padding breaks default borders so this div is a substitute (bad form but ¯\_(ツ)_/¯ )-->
-        <div class = "header-border"></div>
-        <!--Background-->
-        <div class ="background">
-            <!--Main Content Container-->
-            <section class = "body-container" id = "portfolio-container">
-                    <h1 class = "body-heading">Portfolio</h1>
-                    <div class = "body-border"></div>
-                    <!--These are placeholders as I don't have a lot to show off at the moment-->
-                        <div>
-                            <img  src = "./assets/images/Birb.png" class = "portfolio-image" id = "top-left" alt = "a poorly drawn image of Kirby floating on a star and saying salutations to a tree">
-                            <h6 class = "portfolio-caption" id = "top-left-caption">A Picture of Kirby</h6>
-                        </div>
-                        <div>
-                            <img src = "./assets/images/kunk.png"  class = "portfolio-image" id = "top-right" alt = "a circular green creature and a pirate who has lost all of his limbs to scurvy arguing.">
-                            <h6 class = "portfolio-caption" id = "top-right-caption">Kunkle and Tunter</h6>
-                        </div>
-                        <div>
-                            <img src = "./assets/images/warm.png"  class = "portfolio-image" id = "bottom-left" alt = "An opulent worm burrowing his way through the soil with a cane and a top hat ">
-                            <h6 class = "portfolio-caption" id = "bottom-left-caption">An Affluent Worm</h6>
-                        </div>
-                        <div>
-                            <img src = "./assets/images/mrmim.png"  class = "portfolio-image" id = "bottom-right" alt = "A poorly drawn image of the Pokemon Mr. Mime">
-                            <h6 class = "portfolio-caption" id = "bottom-right-caption">Mr Mime.</h6>
-                        </div>
+<body>
+    <!--Header-->
+    <header>
+        <nav class= "navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+                <a href="./index.html" class="navbar-brand">Andrew Bergheim</a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class = "nav-item active"> 
+                            <a class = "nav-link" href = "./index.html">About Me</a>
+                        </li>
+                        <li class = "nav-item active"> 
+                                <a class = "nav-link" href = "./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class = "nav-item active"> 
+                                <a class = "nav-link" href = "./contact.html">Contact</a>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+    <!--Content-->
+        <main role = "main" class = "container">
+            <div class = "container">
+                <h5>Portfolio</h5>
+            </div>
+
+            <div class = "row"> <!--First Row-->
+                <div class = "col-sm">
+                    <img class="img-thumbnail portfolio" src="assets/images/warm.png" alt="an affluent worm">
+                    <h4 class = "portfolio-description">An Affluent Worm</h4>
+                </div>
                 
-            </section>
+                <div class = "col-sm">
+                    <img class="img-thumbnail portfolio" src="assets/images/Birb.png" alt="A picture of Kirby saying salutations to a poorly drawn and sad tree">
+                    <h4 class = "portfolio-description">Kirby</h4>
+                </div>
+            </div>
+
+            <div class = "row"> <!--second Row-->
+                <div class = "col-sm">
+                    <img class="img-thumbnail portfolio" src="assets/images/kunk.png" alt="a circular monster arguing with a scurvy-riddled pirate">
+                    <h4 class = "portfolio-description">Kunkle and Tunter</h4>
+                </div>
+                    
+                <div class = "col-sm">
+                    <img class="img-thumbnail portfolio" src="assets/images/mrmim.png" alt="a poorly drawn image of the pokemon Mr. Mime">
+                    <h4 class = "portfolio-description">Mr. Mime</h4>
+                </div>
+            </div>
+
+            <div class = "row"> <!--Third Row (currently a placeholder)-->
+                <div class = "col-sm">
+                        <img class="img-thumbnail portfolio" src="assets/images/egg.png" alt="a minimalist egg on a blue background">
+                        <h4 class = "portfolio-description">An Egg in Freefall</h4>
+                </div>
+                        
+                <div class = "col-sm">
+        
+                </div>
+            </div>
+
+        </main>
+    <!--Footer-->
+    <!--<footer class = "footer">-->
+    <footer class = "footer">
+        <div class="container">
+            <span>Copyright 2019</span>
         </div>
-        <!--footer-->    
-        <section class = "footer">
-        <h6 class = "footer-text">Copyright © 2019 Andrew Bergheim </h6>
-        </section>
-    </body>
+    </footer>
+<!--Scripts-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
