@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src = "resources/jquery341.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "assets/style.css">
+</head>
+<body>
+    <!--Header-->
+    <container id = "header-container">
+        <div id = "header-div" class="row container-fluid">
+            <div class="col">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+    </container>
+    <!--Body-->
+    <container>
+        <!--Main Row (Search Bar and City info)-->
+        <div class="row">
+            <!--Search Bar-->
+            <div class="col-md-3">
+                <h3>Search for a City:</h3>
+                <br>
+                <!--Search area-->
+                <div id = "search-line">
+                    <input type="text" id = "search-text" class="form-control">
+                    <button id = "search-button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </div>
+                <!--empty div to populate search history into-->
+                <div id="history-div">
+
+                </div> 
+
+
+            </div>
+            <!--Data column (City and 5 day forecast)-->
+            <div class = "col-md-9">
+            <!--City Info Container-->
+                <div id = "city-container">
+                    <!--Div to populate City weather info into-->
+                    <div id = "city-data">
+                        <h3 id = "city-name-date"></h3>
+                        <img id = "icon-current">
+                        <p id = "current-temp">Temperature: </p>
+                        <p id = "current-humidity">Humidity: </p>
+                        <p id = "current-wind">Wind Speed: </p>
+                        <p id = "current-UV-div">UV Index: <span id = "current-UV" class="rounded"></span></p>
+                    </div>
+                    
+                </div>
+            <!--Five Day Forecast-->
+                <div id = "5-forecast">
+                    <h5>Five Day Forecast:</h5>
+                    <div id = "forecast-results" class = "row"> 
+                        <div class = "forecast-day col-md-2 rounded" id = "forecast-day-1">
+                            <h4 class = "forecast-date"></h4>
+                            <img class = "forecast-icon">
+                            <p class = "forecast-temp"></p>
+                            <p class = "forecast-humidity"></p>
+                        </div>
+
+                        <div class = "forecast-day col-md-2 rounded" id = "forecast-day-2">
+                            <h4 class = "forecast-date"></h4>
+                            <img class = "forecast-icon">
+                            <p class = "forecast-temp"></p>
+                            <p class = "forecast-humidity"></p>
+                        </div>
+
+                        <div class = "forecast-day col-md-2 rounded" id = "forecast-day-3">
+                            <h4 class = "forecast-date"></h4>
+                            <img class = "forecast-icon">
+                            <p class = "forecast-temp"></p>
+                            <p class = "forecast-humidity"></p>
+                        </div>
+
+                        <div class = "forecast-day col-md-2 rounded" id = "forecast-day-4">
+                            <h4 class = "forecast-date"></h4>
+                            <img class = "forecast-icon">
+                            <p class = "forecast-temp"></p>
+                            <p class = "forecast-humidity"></p>
+                        </div>
+
+                        <div class = "forecast-day col-md-2 rounded" id = "forecast-day-5">
+                            <h4 class = "forecast-date"></h4>
+                            <img class = "forecast-icon">
+                            <p class = "forecast-temp"></p>
+                            <p class = "forecast-humidity"></p>
+                            </div>
+                    
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</container>
+<script src="assets/script.js"></script>
+</body>
+</html>

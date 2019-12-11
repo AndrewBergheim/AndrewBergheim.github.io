@@ -1,0 +1,51 @@
+#current-UV{
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#city-data{
+    border: 1px solid #dddddd;
+    height: 50%;
+    padding: 10px;
+}
+
+
+
+#header-div{
+    background-color: #343A40;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
+.col-md-3{
+    background: #fafafa;
+}
+
+#city-name-date{
+float: left;
+}
+
+.forecast-day{
+    margin: 15px;
+    background: #007bff;
+    color: #ffffff;
+}
+
+#search-text{
+    width: 80%;
+    display: inline;
+}
+
+.history-button{
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
