@@ -8,7 +8,7 @@ function search(){
     }else{
         searchTerm = $("#searched-word").val()
     }
-    let queryURL = "http://api.urbandictionary.com/v0/define?term=" + searchTerm;
+    let queryURL = "https://api.urbandictionary.com/v0/define?term=" + searchTerm;
 
     $.ajax({
         url:queryURL,
